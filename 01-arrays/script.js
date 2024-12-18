@@ -10,7 +10,7 @@ const teachers = [
 
 // 1. Utilizzando un indice sull'array teachers, cambia il valore della
 // variabile fourthTeacher qui sotto in modo che sia il quarto insegnante elencato nell'array
-const fourthTeacher = teachers[4];
+const fourthTeacher = teachers[5]
 
 console.log(fourthTeacher);
 
@@ -42,14 +42,26 @@ console.log(teachers);
 
 // 7. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
-let isFabioPresent = [];
+/*let isFabioPresent = [];
 
 for (let index = 0; index < teachers.length; index++) {
   if (teachers[index] === 'Fabio') {
     isFabioPresent.push(teachers[index])
     console.log(isFabioPresent);
   }
+}*/
+
+/*let isFabioPresent = [];
+
+for (let index = 0; index < teachers.length; index++) {
+  if(teachers[index].includes('Fabio')){
+    isFabioPresent.push(teachers[index]);
+  }
 }
+console.log(isFabioPresent);*/
+let isFabioPresent = teachers.includes('Fabio');
+console.log(isFabioPresent);
+
 
 
 // 8. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
